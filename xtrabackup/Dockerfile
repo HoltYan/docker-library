@@ -1,1 +1,1 @@
-FROM percona-xtrabackup:8.0.12
+FROM percona-xtrabackup:8.0
