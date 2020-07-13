@@ -10,8 +10,8 @@ RUN apt-get install -y wget
 RUN apt-get install -y gnupg
 RUN apt-get install -y nmap
 
-RUN wget -c https://repo.mysql.com/mysql-apt-config_0.8.14-1_all.deb
-RUN export DEBIAN_FRONTEND=noninteractive && export DEBIAN_PRIORITY=critical && dpkg -i mysql-apt-config_0.8.14-1_all.deb
+RUN wget -c https://repo.mysql.com/mysql-apt-config_0.8.15-1_all.deb
+RUN export DEBIAN_FRONTEND=noninteractive && export DEBIAN_PRIORITY=critical && dpkg -i mysql-apt-config_0.8.15-1_all.deb
 
 RUN wget https://repo.percona.com/apt/percona-release_latest.$(lsb_release -sc)_all.deb
 RUN dpkg -i percona-release_latest.$(lsb_release -sc)_all.deb
