@@ -9,4 +9,4 @@ RUN curl -o xtrabackup.deb https://www.percona.com/downloads/Percona-XtraBackup-
   dpkg -i xtrabackup.deb && rm xtrabackup.deb
   
 RUN curl -o mysql-apt-config_0.8.15-1_all.deb https://repo.mysql.com/mysql-apt-config_0.8.15-1_all.deb && \
-  dpkg -i mysql-apt-config_0.8.15-1_all.deb & rm mysql-apt-config_0.8.15-1_all.deb
+  dpkg -i mysql-apt-config_0.8.15-1_all.deb && rm mysql-apt-config_0.8.15-1_all.deb
