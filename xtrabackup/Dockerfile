@@ -1,12 +1,24 @@
-FROM debian:stable-slim
+FROM ubuntu:18.04
+MAINTAINER xiaochaoren
+RUN rm -rf /etc/apt/sources.list
 
-RUN apt update && apt-get -y install \
-  ncat curl libaio1 libdbd-mysql-perl rsync \
-  libcurl4 libcurl4-openssl-dev libev4 \
-  && apt-get clean && rm -rf /var/lib/apt/lists/*
+COPY sources.list /etc/apt/
 
-RUN curl -o xtrabackup.deb https://www.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.13/binary/debian/buster/x86_64/percona-xtrabackup-80_8.0.13-1.buster_amd64.deb && \
-  dpkg -i xtrabackup.deb && rm xtrabackup.deb
-  
-RUN curl -o mysql-apt-config_0.8.15-1_all.deb https://repo.mysql.com/mysql-apt-config_0.8.15-1_all.deb && \
-  dpkg -i mysql-apt-config_0.8.15-1_all.deb && rm mysql-apt-config_0.8.15-1_all.deb
+RUN apt-get update
+RUN apt-get install -y lsb-release
+RUN apt-get install -y wget
+RUN apt-get install -y gnupg
+RUN apt-get install -y nmap
+
+RUN wget -c https://repo.mysql.com/mysql-apt-config_0.8.14-1_all.deb
+RUN export DEBIAN_FRONTEND=noninteractive && export DEBIAN_PRIORITY=critical && dpkg -i mysql-apt-config_0.8.14-1_all.deb
+
+RUN wget https://repo.percona.com/apt/percona-release_latest.$(lsb_release -sc)_all.deb
+RUN dpkg -i percona-release_latest.$(lsb_release -sc)_all.deb
+RUN percona-release enable-only tools release
+RUN apt-get update
+RUN apt-get install -y mysql-client
+RUN apt-get install -y percona-xtrabackup-80
+RUN apt-get install -y mysql-shell
+
+CMD ["/bin/bash"]
