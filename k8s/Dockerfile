@@ -1,9 +1,9 @@
 FROM centos
 RUN yum install -y wget git
-RUN wget https://dl.k8s.io/v1.18.8.0/kubernetes.tar.gz
-RUN wget https://dl.k8s.io/v1.18.8.0/kubernetes-client-linux-amd64.tar.gz
-RUN wget https://dl.k8s.io/v1.18.8.0/kubernetes-server-linux-amd64.tar.gz
-RUN wget https://dl.k8s.io/v1.18.8.0/kubernetes-node-linux-amd64.tar.gz
+RUN wget https://dl.k8s.io/v1.18.8/kubernetes.tar.gz
+RUN wget https://dl.k8s.io/v1.18.8/kubernetes-client-linux-amd64.tar.gz
+RUN wget https://dl.k8s.io/v1.18.8/kubernetes-server-linux-amd64.tar.gz
+RUN wget https://dl.k8s.io/v1.18.8/kubernetes-node-linux-amd64.tar.gz
 
 
 #RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.1-x86_64.rpm
