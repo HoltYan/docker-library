@@ -1,4 +1,4 @@
-FROM rancher/agent:v1.2.11
+FROM rabbitmq
 #FROM centos
 #RUN yum install -y wget git
 #RUN wget https://dl.k8s.io/v1.18.8/kubernetes.tar.gz
