@@ -1,5 +1,4 @@
-FROM centos:7
-RUN yum install -y wget git
+FROM alpine/git
 
 git clone https://github.com/geekxh/hello-algorithm.git
 
