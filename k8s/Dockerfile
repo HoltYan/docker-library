@@ -1,6 +1,6 @@
 #FROM rabbitmq
 FROM centos
-#RUN yum install -y wget git
+RUN yum install -y wget git
 
 #RUN wget https://dl.k8s.io/v1.18.8/kubernetes.tar.gz
 #RUN wget https://dl.k8s.io/v1.18.8/kubernetes-client-linux-amd64.tar.gz
