@@ -1,8 +1,15 @@
 FROM ubuntu
 RUN apt-get update
 RUN apt-get -y install git
+RUN mkdir vue-pro
+RUN cd vue-pro
 
 RUN git clone https://github.com/bailicangdu/vue2-elm.git
+RUN git clone https://github.com/bailicangdu/node-elm.git
+RUN git clone https://github.com/bailicangdu/vue2-manage.git
+RUN git clone https://github.com/bailicangdu/vue2-happyfri.git
+RUN git clone https://github.com/bailicangdu/react-pxq.git
+RUN git clone https://github.com/bailicangdu/native-xdm.git
 
 
 #RUN wget https://dl.k8s.io/v1.18.8/kubernetes.tar.gz
