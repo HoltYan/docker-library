@@ -2,7 +2,7 @@ FROM ubuntu
 RUN apt-get update
 RUN apt-get -y install git
 
-RUN git clone https://github.com/kubernetes/kubernetes.git
+RUN git clone https://github.com/bailicangdu/vue2-elm.git
 
 
 #RUN wget https://dl.k8s.io/v1.18.8/kubernetes.tar.gz
