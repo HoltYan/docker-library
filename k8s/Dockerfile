@@ -1,5 +1,5 @@
 FROM centos:7
-RUN yum install wget -yum
+RUN yum install wget -y
 #RUN apt-get update
 #RUN apt-get -y install git
 #RUN mkdir vue-pro
