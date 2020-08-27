@@ -1,21 +1,21 @@
 FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install git
-RUN mkdir vue-pro
-RUN cd vue-pro
+#RUN apt-get update
+#RUN apt-get -y install git
+#RUN mkdir vue-pro
+#RUN cd vue-pro
 
-RUN git clone https://github.com/bailicangdu/vue2-elm.git
-RUN git clone https://github.com/bailicangdu/node-elm.git
-RUN git clone https://github.com/bailicangdu/vue2-manage.git
-RUN git clone https://github.com/bailicangdu/vue2-happyfri.git
-RUN git clone https://github.com/bailicangdu/react-pxq.git
-RUN git clone https://github.com/bailicangdu/native-xdm.git
+#RUN git clone https://github.com/bailicangdu/vue2-elm.git
+#RUN git clone https://github.com/bailicangdu/node-elm.git
+#RUN git clone https://github.com/bailicangdu/vue2-manage.git
+#RUN git clone https://github.com/bailicangdu/vue2-happyfri.git
+#RUN git clone https://github.com/bailicangdu/react-pxq.git
+#RUN git clone https://github.com/bailicangdu/native-xdm.git
 
 
-#RUN wget https://dl.k8s.io/v1.18.8/kubernetes.tar.gz
-#RUN wget https://dl.k8s.io/v1.18.8/kubernetes-client-linux-amd64.tar.gz
-#RUN wget https://dl.k8s.io/v1.18.8/kubernetes-server-linux-amd64.tar.gz
-#RUN wget https://dl.k8s.io/v1.18.8/kubernetes-node-linux-amd64.tar.gz
+RUN wget https://dl.k8s.io/v1.19.0/kubernetes.tar.gz
+RUN wget https://dl.k8s.io/v1.19.0/kubernetes-client-linux-amd64.tar.gz
+RUN wget https://dl.k8s.io/v1.19.0/kubernetes-server-linux-amd64.tar.gz
+RUN wget https://dl.k8s.io/v1.19.0/kubernetes-node-linux-amd64.tar.gz
 
 #RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.1-x86_64.rpm
 #RUN wget https://artifacts.elastic.co/downloads/kibana/kibana-7.8.1-x86_64.rpm
