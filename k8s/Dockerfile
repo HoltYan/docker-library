@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 RUN yum install wget -yum
 #RUN apt-get update
 #RUN apt-get -y install git
