@@ -17,6 +17,7 @@ RUN wget https://dl.k8s.io/v1.19.0/kubernetes.tar.gz
 RUN wget https://dl.k8s.io/v1.19.0/kubernetes-client-linux-amd64.tar.gz
 RUN wget https://dl.k8s.io/v1.19.0/kubernetes-server-linux-amd64.tar.gz
 RUN wget https://dl.k8s.io/v1.19.0/kubernetes-node-linux-amd64.tar.gz
+RUN wget https://github.com/etcd-io/etcd/releases/download/v3.4.13/etcd-v3.4.13-linux-amd64.tar.gz
 
 #RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.1-x86_64.rpm
 #RUN wget https://artifacts.elastic.co/downloads/kibana/kibana-7.8.1-x86_64.rpm
