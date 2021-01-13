@@ -75,5 +75,5 @@ RUN yum install wget git -y
 # 其他文件
 
 
-RUN wget https://github-production-release-asset-2e65be.s3.amazonaws.com/106809903/58982880-28c4-11eb-945c-cc7f57fc910f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210113T020956Z&X-Amz-Expires=300&X-Amz-Signature=f5d3fb7d2420c92c6696d9beb89bb0cf1572f044bdd53743a3911f066bc338f0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=106809903&response-content-disposition=attachment%3B%20filename%3Dfranz_5.6.1_amd64.deb&response-content-type=application%2Foctet-stream
-RUN wget https://github-production-release-asset-2e65be.s3.amazonaws.com/106809903/75ccf700-28c4-11eb-893e-b4c6bd1c860d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210113T020903Z&X-Amz-Expires=300&X-Amz-Signature=cdf29c332ffa582378154f4c623c49ea1e62012b8fb41901cd4e557f9b24eb3a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=106809903&response-content-disposition=attachment%3B%20filename%3DFranz-Setup-5.6.1.exe&response-content-type=application%2Foctet-stream
+RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz-setup-5.6.1.exe
+RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz_5.6.1_amd64.deb
