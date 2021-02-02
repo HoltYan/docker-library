@@ -75,5 +75,7 @@ RUN yum install wget git -y
 # 其他文件
 
 
-RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz-setup-5.6.1.exe
-RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz_5.6.1_amd64.deb
+#RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz-setup-5.6.1.exe
+#RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz_5.6.1_amd64.deb
+
+RUN wget https://github.com/hlmd/Postman-cn/releases/download/8.0.3/app.zip
