@@ -46,8 +46,9 @@ RUN yum install wget git -y
 #RUN git clone https://github.com/tiangolo/fastapi.git
 #RUN git clone https://github.com/gevent/gevent.git
 #RUN git clone https://github.com/aio-libs/aiohttp.git
-#RUN git clone
-#RUN git clone
+
+RUN git clone https://github.com/saltstack/salt.git
+RUN git clone https://github.com/ansible/ansible.git
 #RUN git clone
 #RUN git clone
 #RUN git clone
@@ -78,4 +79,4 @@ RUN yum install wget git -y
 #RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz-setup-5.6.1.exe
 #RUN wget https://github.com/meetfranz/franz/releases/download/v5.6.1/franz_5.6.1_amd64.deb
 
-RUN wget https://github.com/hlmd/Postman-cn/releases/download/8.0.3/app.zip
+#RUN wget https://github.com/hlmd/Postman-cn/releases/download/8.0.3/app.zip
